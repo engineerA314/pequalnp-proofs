@@ -26,7 +26,9 @@ The same $q-1$ OR gates combine the $q$ column answers for every ordinary line. 
 
 To obtain an exact circuit, let $F$ be full incidence and build $B$ as an OR with one leaf $y_w\land(\bigvee_{p\in w}x_p)$ per line and one leaf $\bigwedge_p x_p$. Then $A\land B=F$. Every incidence activates $A$ by monotonicity. The only extra input accepted by $B$ has all points on and all lines off, which $A$ rejects. Both final operands matter. For example, the point $(1,1)$ misses both $z=0$ and $z=x+1$, yet their slope and intercept encodings jointly activate $A$ there.
 
-Every shared low merge of this exact circuit lies in $A$. A point-only OR in $B$ needs two distinct alive points to be a merge, so it can merge on at most one line. In the final OR tree of $B$, at most one leaf has a nonempty singleton profile on each line. The last gate is an AND. The union of all shared-merge cones thus has size at most $30q^2$, while the complete circuit also pays for $B$. A lower bound using a size-minimal circuit or downstream gates remains open. [Construction and replay](sparse_line_circuit.py)
+Every shared low merge of this exact circuit lies in $A$. A point-only OR in $B$ needs two distinct alive points to be a merge, so it can merge on at most one line. In the final OR tree of $B$, at most one leaf has a nonempty singleton profile on each line. The last gate is an AND. The union of all shared-merge cones thus has size at most $30q^2$, while the complete circuit also pays for $B$.
+
+The implemented completion has $|A|+N(q+3)$ gates. The direct circuit for $F$ takes $q$ point ORs and one AND per line, then $N-1$ ORs to combine the line terms, for a smaller total of $N(q+2)-1$. Whether this degree of sharing can occur in a minimum-size circuit remains open. [Construction and replay](sparse_line_circuit.py)
 
 ## Reproduce the results
 

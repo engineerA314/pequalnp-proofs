@@ -45,8 +45,9 @@ column, or is an individual primary input. On that line each node of
 the OR tree then merges its two disjoint column blocks. Earlier nodes
 are descendants of one operand or have disjoint leaves, so these blocks
 were in different components. This proves a superlinear count of
-genuine uses entirely inside a linear-size cone. The full exact circuit
-has no minimality guarantee.
+genuine uses entirely inside a linear-size cone. The implemented exact
+completion has |A| + N*(q+3) gates. Computing the direct line terms for
+F and taking their OR takes only N*(q+2)-1 gates.
 
 For two active lines, partition the line labels by each binary digit.
 Within each partition run a copy of the base circuit per side and OR
@@ -363,6 +364,8 @@ def main():
         assert not ((masks[0] | masks[q + 1]) & (1 << (q + 1)))
         assert base.evaluate(inputs) == 1
         complete = complete_sparse_prefix(base, masks)
+        assert len(complete.gates) == len(base.gates) + n*(q + 3)
+        assert n*(q + 2) - 1 < len(complete.gates)
         assert complete.evaluate(inputs) == 0
         assert complete.evaluate([1]*n + [0]*n) == 0
         if k == 1:
