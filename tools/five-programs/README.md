@@ -19,3 +19,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Geometric complexity theory | The cubic and quartic DIV inequalities hold for every coefficient span of dimension at most two, with a sharp support-sensitive bound. [Projective fibres and exact examples](sparse-pencil-div.md) |
 | Circuit lower bounds via algorithms | One integer polynomial serves all moduli with unequal endpoint precisions. Degree $a+b-1$ is optimal, and the minimal solution is unique. [Amplifiers and converse](asymmetric-amplifiers.md) |
 | P = NP algorithm search | Exact SAT counting and witnesses in polynomial time on clause compatibility graphs of logarithmic degeneracy, including formulas of unbounded primal treewidth. [Algorithm and proof](clique-sat.md) |
+| Library of Known Results | Polynomial-size circuits pull back along the project's TM2 Karp reductions, including variable output lengths. [Proof and use for L-lib-348](ppoly-karp.md). |
