@@ -111,7 +111,8 @@ private theorem ofFn_mono {n : ℕ} (C : Circuit) (mono : IsMonotoneCircuit C) (
   · rw [List.getD_eq_default _ _ (by simp; omega)] at on
     contradiction
 
-private theorem merge_points (inc : Fin P → Fin L → Bool) (C : Circuit) (g : ℕ) (w : Fin L)
+/-- A low merge accepts at least two different singleton points on its line. -/
+theorem merge_points (inc : Fin P → Fin L → Bool) (C : Circuit) (g : ℕ) (w : Fin L)
     (m : IsLowMerge P L inc C g w) :
     ∃ p r : Fin P, p ≠ r ∧ p ∈ aliveSet P L C g w ∧ r ∈ aliveSet P L C g w := by
   obtain ⟨start, a, ha, b, hb, gate, _, left, right⟩ := m
