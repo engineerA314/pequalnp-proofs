@@ -1,0 +1,17 @@
+# Shared gates in projective-plane incidence circuits
+
+The project asks whether every binary monotone circuit for its plane incidence tests satisfies $Nq\le100s$, where $q$ is the plane order, $N=q^2+q+1$ and $s$ counts gates with unrestricted fan-out. The positive tests select an incident pair. The negative tests allow every point set and up to $q$ selected lines, provided there is no incidence. The notes here are research contributions on a contributor branch. The unrestricted target remains open in these notes. [Project statement](https://pequalnp.com/lemma#L-meta-1629) · [Upstream discussion](https://github.com/open-goat/pequalnp-proofs/discussions/21642#discussioncomment-19942065)
+
+| Question | Result and scope |
+| --- | --- |
+| What lower bound holds for every circuit in the project statement? | At least $2q^2+1$ binary ORs and $\lceil\log_2\sum_{j=0}^q\binom Nj\rceil$ binary ANDs, counted in the same circuit. [Total gate lower bound](plane-gate-bound.md) · [AND transcript](and-transcripts.md) |
+| How much can many lines share in a single merge cone? | The minimum joint support is controlled by the plane's double blocking number. [Blocking supports](blocking-support.md) |
+| What does an exact positive-clause repair cost? | Its minimum number of clauses equals the number of leaking maximal sparse negatives. [Clause repairs](clause-repair.md) |
+| How large a sparse promise has an explicit smaller circuit? | For square orders and $1\le t\le\sqrt q$, all point sets and up to $t$ lines admit $O(N(t+1))$ gates. [Projection construction](square-projections.md) |
+| How many fixed lines make a shared projection prefix lose its line tests? | Exactly $\sqrt q$ for a nonempty proper set of directions and $2\sqrt q-1$ for all directions. [Optimal anchors](projection-anchors.md) |
+| What costs remain even when every wire of the shared front end is free? | Two explicit infinite families require $\Omega(q\log q)$ additional ANDs after exposing every wire. Allowing one additional AND along each suffix path raises the additional cost to $(1-o(1))Nq$. [All wires](full-boundary.md) · [One additional AND level](single-level-repair.md) |
+| What holds with arbitrary AND depth? | The number of incidences admitting a parse with two variable leaves is at most $s$. If only the active line must occur once and the point may repeat arbitrarily, at most $3s+N$ incidences admit such a parse. [Two leaves](two-leaf-witnesses.md) · [One line occurrence](line-once.md) |
+| Where can the charge for shared ANDs fail? | If $B$ incident pairs cause both operands of some AND to turn on together, then $Nq\le3s+B$. In particular line-disjoint AND operands give $Nq\le3s$. [Simultaneous rises](fork-tradeoff.md) |
+| How was the finite-field netlist implementation checked? | At $q=16,25,49$, independently replayed LRAT certificates cover every point assignment and every allowed line set. Each emitted circuit has a checked false positive when the line budget increases by one. [SAT and LRAT replay](projection-sat.md) |
+
+The individual notes specify the mathematical assumptions, which statements have Lean proofs, which counts come from executable netlists, and how to reproduce them. Prior results and attributions are given in the relevant notes.
