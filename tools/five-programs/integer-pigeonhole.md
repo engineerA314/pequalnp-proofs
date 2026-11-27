@@ -4,7 +4,7 @@ Let $H=2^\ell$ with $\ell>0$, and let $K=H\binom{H+1}{2}$. Any syntactic integer
 
 $$(4\ell+2)K-1.$$
 
-The statement uses the exact derivation rules and the coefficient-bit cost from the P = NP algorithm search program. For example, the floor is 399 at four holes and 4,031 at eight holes. This is a bound has order $H^3\log H$. The superpolynomial target in L-alg-006 remains open. [Lean proof](IntegerPigeonProof.lean) · [Target statement](https://pequalnp.com/lemma#L-alg-006) · [Project rule definitions](../../lean/PEqualNP/Defs/SearchQSyn.lean)
+The statement uses the exact derivation rules and the coefficient-bit cost from the P = NP algorithm search program. For example, the floor is 399 at four holes and 4,031 at eight holes. This floor has order $H^3\log H$. The superpolynomial target in L-alg-006 remains open. [Lean proof](IntegerPigeonProof.lean) · [Target statement](https://pequalnp.com/lemma#L-alg-006) · [Project rule definitions](../../lean/PEqualNP/Defs/SearchQSyn.lean)
 
 There are exactly $K$ distinct source lines after forgetting the order and repetition of equations. Deleting any one admits a satisfying assignment. One can collide exactly the two named pigeons at their named hole and assign the others bijectively to the remaining holes. Every written source contains $2\ell$ distinct literal equations. Each contributes at least two units of coefficient cost, and the line has one unit of overhead. A source therefore costs at least $4\ell+1$. [Source count, injectivity and literal cost](IntegerPigeonAxioms.lean)
 
