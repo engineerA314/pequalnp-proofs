@@ -8,7 +8,7 @@ For $k,b\ge1$, take the $k$ clauses $x_i\lor y_1\lor\cdots\lor y_b$ and process 
 
 The checker compares 800 random counts against exhaustive enumeration, validates returned assignments, and tests malformed words. With $k=72,b=60$ it reaches a peak of two states and returns 5,444,517,870,735,015,410,691,627,236,038,646,169,601 models. [Executable](residual_sat.py) · [Project algorithm-search target](https://pequalnp.com/lemma#L-alg-001)
 
-A polynomial bound on the reachable states of all raw CNF formulas would require a further result. For a clean replay, follow the [clause-counting prerequisite](clique-sat.md), then run in `lean/`.
+The [grid lower bound for every ordering](grid-residuals.md) shows a family on which these reachable-state counts grow superpolynomially. For a clean replay, follow the [clause-counting prerequisite](clique-sat.md), then run in `lean/`.
 
 ```sh
 for m in ResidualAntichain ResidualStateCount ResidualModel ResidualRawSAT ResidualCommonTail ResidualPrefixShapes

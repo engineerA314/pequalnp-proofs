@@ -26,3 +26,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Proof complexity and P = NP algorithm search | Every bit-PHP refutation in either project system must mention at least $\lceil2(h+1)/3\rceil$ pigeons on a line. [Exact overlap criterion and sharpness](bit-matching-width.md). |
 | P = NP algorithm search | Exact raw SAT counting and model reconstruction by residual clauses, with a two-state family of arbitrary width. [Verification and family](residual-sat.md). |
 | Geometric complexity theory | A failed rank test yields an explicit nonconstant permanent line and a probe among $1,\ldots,n$. [Rank formula, witness and implementation](conjugate-rank-probes.md). |
+| P = NP algorithm search | On a rectangular monotone grid 2-CNF, every variable ordering needs at least $2^{\lfloor\min(r,c)/2\rfloor}$ distinguishable residual states at some cut. [All-orders lower bound](grid-residuals.md). |
