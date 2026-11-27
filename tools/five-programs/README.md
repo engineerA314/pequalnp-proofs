@@ -14,3 +14,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | P = NP algorithm search | An exact model counter and witness-producing SAT solver with polynomial running time given logarithmic induced width. [Solver, verification and examples](bucket-sat.md) |
 | Circuit lower bounds via algorithms | Grouping signed input columns gives exact counting with a superpolynomial saving when $n-d$ exceeds every constant times $\log n$, for $d$ nonzero column types up to sign. [Signed-column counting](signed-columns.md) |
 | Library of known results | The adjacency language in L-lib-349 is in NP in the actual polynomially clocked TM2 model. [Certificate and polynomial-time verifier](colour-np.md) |
+| Library of known results | A polynomially clocked TM2 reduction completes 3-colourability NP-completeness on arbitrary words. It also gives the conditional collapse in L-lib-347. [Full reduction and clean replay](three-colour-complete.md) |
