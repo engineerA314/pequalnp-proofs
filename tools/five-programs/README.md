@@ -16,3 +16,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Library of known results | The adjacency language in L-lib-349 is in NP in the actual polynomially clocked TM2 model. [Certificate and polynomial-time verifier](colour-np.md) |
 | Library of known results | A polynomially clocked TM2 reduction completes 3-colourability NP-completeness on arbitrary words. It also gives the conditional collapse in L-lib-347. [Full reduction and clean replay](three-colour-complete.md) |
 | Proof complexity and P = NP algorithm search | A sharp witness-incidence bound for every binary refutation, applied in both parity and integer resolution. [Kraft bound and applications](proof-witness-incidence.md) |
+| Geometric complexity theory | The cubic and quartic DIV inequalities hold for every coefficient span of dimension at most two, with a sharp support-sensitive bound. [Projective fibres and exact examples](sparse-pencil-div.md) |
