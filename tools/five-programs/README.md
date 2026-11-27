@@ -23,3 +23,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Geometric complexity theory | A $2n-2$ bound for $L\cap\overline L$, a matching two-derivative construction, and an exact all-size cubic witness. [Dimension and obstruction](conjugate-permanent.md). |
 | Proof complexity | Every ordinary pigeonhole refutation contains a locally falsifiable clause on exactly as many pigeons as holes, with an outside pivot. [Extraction and matching checker](matching-boundary.md). |
 | Circuit lower bounds via algorithms | Exact counting in $2^{n/2+o(n)}$ on balanced cuts crossed by $o(n)$ gates, for arbitrary signed top weights. [Algorithm and bound](threshold-separators.md). |
+| Proof complexity and P = NP algorithm search | Every bit-PHP refutation in either project system must mention at least $\lceil2(h+1)/3\rceil$ pigeons on a line. [Exact overlap criterion and sharpness](bit-matching-width.md). |
