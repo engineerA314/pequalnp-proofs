@@ -24,3 +24,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Proof complexity | Every ordinary pigeonhole refutation contains a locally falsifiable clause on exactly as many pigeons as holes, with an outside pivot. [Extraction and matching checker](matching-boundary.md). |
 | Circuit lower bounds via algorithms | Exact counting in $2^{n/2+o(n)}$ on balanced cuts crossed by $o(n)$ gates, for arbitrary signed top weights. [Algorithm and bound](threshold-separators.md). |
 | Proof complexity and P = NP algorithm search | Every bit-PHP refutation in either project system must mention at least $\lceil2(h+1)/3\rceil$ pigeons on a line. [Exact overlap criterion and sharpness](bit-matching-width.md). |
+| P = NP algorithm search | Exact raw SAT counting and model reconstruction by residual clauses, with a two-state family of arbitrary width. [Verification and family](residual-sat.md). |
