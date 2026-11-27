@@ -13,3 +13,4 @@ These notes use the project's pinned Lean toolchain and the exact program defini
 | Library of known results | An executable reduction on every binary word, including malformed encodings and sparse variable identifiers, with formal quadratic output length. [Bit-string reduction](three-colour-words.md) |
 | P = NP algorithm search | An exact model counter and witness-producing SAT solver with polynomial running time given logarithmic induced width. [Solver, verification and examples](bucket-sat.md) |
 | Circuit lower bounds via algorithms | Grouping signed input columns gives exact counting with a superpolynomial saving when $n-d$ exceeds every constant times $\log n$, for $d$ nonzero column types up to sign. [Signed-column counting](signed-columns.md) |
+| Library of known results | The adjacency language in L-lib-349 is in NP in the actual polynomially clocked TM2 model. [Certificate and polynomial-time verifier](colour-np.md) |
